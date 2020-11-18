@@ -1,0 +1,269 @@
+
+    body {background-color:  white;
+         color:#191970;
+         font-family: 'Times New Roman', Times, serif;
+         margin: 0;
+         
+         }
+
+         header {
+            background-color: rgb(255, 255, 255);
+            color: #3B5F71;
+            line-height: none ;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 300%;
+          
+          }
+    
+.header {
+  background-color: black;
+  color: white;
+  line-height: none ;
+  font-family:  'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 300%;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  
+}
+h2 {
+  background-color: grey;
+  color: blue;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 300%;
+}
+p {
+  font-size: .90em;
+  text-indent: 3em;
+ /* color:  black;*/
+  font-family: courier;
+  font-size: 160%;
+}
+
+nav {font-weight: bold;
+  font-size: 1.25em;
+  word-spacing: 1em;
+}
+
+    ul{font-weight: bold;}
+
+    footer {
+            color: #333333;
+            font-size: .75em;
+            font-style: italic;
+            }
+
+.Goal, .Team, .Mission, .Value{ 
+  font-family:'Times New Roman', Times, serif;
+  color: #7A0808;
+    /*text-shadow: 1px 1px 2px black, 0 0 0.2em #7A0808;*/
+    
+    font: 1.5em Georgia, serif;
+  }
+
+
+span.logo{
+  content: "\0026";
+  font-family: 'Times New Roman', Times, serif;
+  color:  #7A0808;
+  font-size: 130%;
+  text-shadow: 4px 2px 5px rgb(62, 13, 94);
+  /* text-shadow: 3px 3px 5px #cccccc; */
+}
+
+.header{
+  margin: 0;
+}
+.logo{
+  
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 29px;
+  top: 20%;
+  margin-top: 20px;
+  z-index: 6;
+  position: relative;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+}
+
+li {
+  float: left;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  
+}
+
+li a {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  color: #3B5F71;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #062E42;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+
+.mainPageImg{
+  height: -webkit-fill-available;
+  /* background-image: url("images/main_page.png");
+  background-repeat: no-repeat; */
+  background-size: cover;
+  display: flex;
+}
+
+.contentDiv{
+  padding: 1em;
+  background-color: rgb(191, 180, 180);
+  display: flex;
+  flex-flow: row-reverse ;
+}
+
+footer{
+  padding: 5px 0;
+  text-align: right;
+}
+
+.mainContentDiv{
+  color: black;
+  padding: 0 2em;
+}
+
+.mainContentDiv2{
+  color: #3B5F71;
+  padding: 0 2em;
+}
+
+.border_right{
+  border-right: 5px solid lightgray;
+}
+.border_left{
+  border-left: 5px solid lightgray;
+}
+
+.missionAndGoals{
+  display: flex;
+  direction: row;
+  
+}
+
+.missionAndGoalsChild{
+  display: flex;
+  flex-basis: 50%;
+  flex-flow: column;
+  padding: 0 2em;
+  text-align: center;
+
+}
+
+.missionAndGoalsChild h3, .missionAndGoalsChild h4{
+  margin: 5px auto;
+}
+
+li a.active{
+  background-color: #062E42;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+li a span{
+  width: 100%;
+  text-align: center;
+}
+
+.mainContentDiv ul{
+  background-color: #ffffff;
+}
+.mainContentDiv p {
+  text-align: center;
+}
+
+.itemActions{
+  display: flex;
+  flex-flow: row;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font: 1.5em courier;
+}
+
+.itemActions p {
+  width: 33.33%;
+}
+
+.contactUsMainDiv{
+  display: flex;
+  flex-flow: row;
+  padding: 0 1em;;
+}
+
+.contactUsMainDiv p{
+  text-indent: 0;
+}
+
+.contactUsMainDiv h4{
+  margin: 5px 0;
+}
+
+.contactUsMainDiv div{
+  display: flex;
+  flex-grow: .5;
+  flex-basis: 50%;
+  flex-flow: column;
+}
+
+.contactUsMainDiv .inputDivs{
+  width: 50%;
+}
+
+.contactUsMainDiv .inputDivs.buttons{
+  display: flex;
+  flex-flow: row;
+  margin-top: 5px;
+}
+
+.contactUsMainDiv .inputDivs.buttons button{
+  flex-grow: .5;
+  flex-basis: 50%;
+}
+
+.calculationDiv{
+  min-height: 20em;
+  max-height: 35em;
+}
+
+.tileAmountDivs{
+  display: flex;
+  flex-flow: row !important;
+}
+
+.tileAmountDivs div{
+  display: flex;
+  flex-grow: .5;
+}
+
+ /* turi slide show*/
+.shadowh4{
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font: 1.5em Georgia, serif;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>G&G Tile And Home Improvement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="header">G<span class="logo">&</span>G Tile And Home Improvement</h1>
+    <ul>
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="kitchen.html"><span>Kitchen</span></a></li>
+        <li><a href="bathroom.html"><span>Bathroom</span></a></li>
+        <li><a href="portofolio.html"><span>Portfolio</span></a></li>
+        <li><a class="active" href="request.html"><span>Request an estimate</span></a></li>
+        <li><a href="about.html"><span>About Us</span></a></li>
+    </ul>
+
+    <div class="contactUsMainDiv">
+        <div>
+            <p>Contact Us</p>
+            <h4>Phone: <a href="Tel: (617) 980-3179">(617) 980-3179</a></h4>
+            <h4>
+                E-Mail: <a href ="mailto: GnG/TILEANDREMODELING@GMAIL.COM">GnG/TILEANDREMODELING@GMAIL.COM</a>
+            </h4>
+        </div>
+        <div>
+            <p>When Contacting Us Via E-Mail:</p>
+            <p>
+                Please make sure to include the following: <br/> 
+                First and Last Name <br/>
+                The type of the project you are inquiring about. <br/>
+                The address where the project will take place. <br/>
+                Description
+            </p>
+        </div>
+    </div>
+
+    <div class="mainPageImg"> 
+        <img src="images/main_page.png" style="height: 600px; width: 100%"/>
+    </div>
+
+    <div class="contactUsMainDiv calculationDiv">
+        <div>
+            <p>Estimate tile cost for your project</p>
+            <div class="inputDivs">
+                <label for="length">Enter Length (Round to highest number):</label>
+                <input type="number" id="length" name="length" min="1">
+            </div>
+            <div class="inputDivs">
+                <label for="width">Enter Width (Round to highest number):</label>
+                <input type="number" id="width" name="width" min="1">
+            </div>
+            <div class="inputDivs">
+                <label for="area">The total area in square foot is: </label>
+                <input id="area" name="area" disabled="disabled"></input>
+            </div>
+            <div class="inputDivs">
+                <h4 style="margin: 3px 0;">The amount of tiles needed for the calculated area:</h4>
+                <div class="tileAmountDivs">
+                    <div>
+                        <label for="tile1">Tiles 1x1:</label>
+                        <input id="tile1" name="tile1" disabled="disabled"></input>
+                    </div>
+                    <div>
+                        <label for="tile1x2">Tiles 1x2:</label>
+                        <input id="tile1x2" name="tile1x2" disabled="disabled"></input>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="inputDivs buttons">
+                <button onClick="clearValues();">Clear</button>
+                <button onClick="calculateArea();">Calculate</button>
+            </div>
+        </div>
+        <div>
+            <p>Request an estimate</p>
+            <p>
+                Feel free to call or email us
+                and we will be happy to follow up
+                with you for any project
+            </p>
+            <p>
+                RECOMMENDATION ON ANY TILE PROJECTS:
+                We always recommend to order
+                10 - 15% more tiles from the total 
+                square footage for any tile project.
+            </p>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="contentDiv">
+        <a href="https://www.facebook.com" target="_blank">Follow Us On Facebook</a>
+    </div>
+    
+    <footer>
+    Copyright &copy; 2020 Artur Shore. All Rights Reserved
+    </footer>
+
+    <script>
+        function clearValues(){
+            // Selecting the input elements for length and width and reset their value
+            document.getElementById("length").value = "";
+            document.getElementById("width").value = "";
+            document.getElementById("area").value = "";
+            document.getElementById("tile1").value = "";
+            document.getElementById("tile1x2").value = "";
+        }
+        function calculateArea(){
+            // Selecting the input element and get its value 
+            var lengthVal = document.getElementById("length").value;
+            var widthVal = document.getElementById("width").value;
+            
+            if(lengthVal == ""){
+                alert("Please enter a value for the length!");
+            }else if(widthVal == ""){
+                alert("Please enter a value for the width!")
+            }else{
+                document.getElementById("area").value = Math.ceil(lengthVal) * Math.ceil(widthVal);
+                document.getElementById("tile1").value = Math.ceil(lengthVal) * Math.ceil(widthVal);
+                document.getElementById("tile1x2").value = Math.ceil(Math.ceil(lengthVal) * Math.ceil(widthVal) / 2);
+            }
+        }
+    </script>
+</body>
+</html>
